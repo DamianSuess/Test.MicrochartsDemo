@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage x:Class="Test.MicrochartsDemo.Views.MainTabView"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Test.MicrochartsDemo.Views"
+            Title="{Binding Title}">
+  <NavigationPage Title="Introduction">
+    <x:Arguments>
+      <local:ChartIntroView Title="Intro" />
+    </x:Arguments>
+  </NavigationPage>
+
+  <NavigationPage Title="Sample 1">
+    <x:Arguments>
+      <local:ChartSample1View Title="Sample A" />
+    </x:Arguments>
+  </NavigationPage>
+
+  <local:ChartSample2View Title="Sample B" />
+
+
+  <!--
+  // This creates a tab but doesn't display anything
+
+  <ContentPage Title="Intro" />
+  -->
+
+  <!--
+  // Sorry, XamGirl, this no longer works w/ Prism 7.2
+
+  <TabbedPage.Children>
+    <local:ChartIntroView />
+    <local:ChartSample1View />
+  </TabbedPage.Children>
+  -->
+
+</TabbedPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Test.MicrochartsDemo.Views.ChartIntroView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:charts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True">
+  <ContentPage.Content>
+    <ScrollView>
+
+      <StackLayout>
+        <Label HorizontalOptions="CenterAndExpand" Text="Second page!" />
+        <Button Command="{Binding GoBackCommand}" Text="Go Back" />
+
+        <charts:ChartView Chart="{Binding ChartData}" HeightRequest="150" />
+
+      </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>
