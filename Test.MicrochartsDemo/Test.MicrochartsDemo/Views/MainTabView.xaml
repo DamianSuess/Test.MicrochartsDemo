@@ -18,16 +18,8 @@
 
   <local:ChartSample2View Title="Sample B" />
 
-
   <!--
-  // This creates a tab but doesn't display anything
-
-  <ContentPage Title="Intro" />
-  -->
-
-  <!--
-  // Sorry, XamGirl, this no longer works w/ Prism 7.2
-
+  // FYI, this example found on the web no longer works w/ Prism 7.2
   <TabbedPage.Children>
     <local:ChartIntroView />
     <local:ChartSample1View />

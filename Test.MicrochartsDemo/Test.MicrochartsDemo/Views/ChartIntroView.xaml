@@ -12,8 +12,13 @@
         <Label HorizontalOptions="CenterAndExpand" Text="Second page!" />
         <Button Command="{Binding GoBackCommand}" Text="Go Back" />
 
-        <charts:ChartView Chart="{Binding ChartData}" HeightRequest="150" />
-
+        <charts:ChartView Chart="{Binding ChartBar}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartDonut}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartLine}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartPie}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartPoint}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartRadar}" HeightRequest="500" />
+        <charts:ChartView Chart="{Binding ChartRadialGauge}" HeightRequest="500" />
       </StackLayout>
     </ScrollView>
   </ContentPage.Content>

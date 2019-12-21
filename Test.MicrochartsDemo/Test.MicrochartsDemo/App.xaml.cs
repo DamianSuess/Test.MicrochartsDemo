@@ -1,5 +1,6 @@
 ﻿using Prism;
 using Prism.Ioc;
+using Test.MicrochartsDemo.Services;
 using Test.MicrochartsDemo.ViewModels;
 using Test.MicrochartsDemo.Views;
 using Xamarin.Forms;
@@ -35,6 +36,10 @@ namespace Test.MicrochartsDemo
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
+      // Services
+      containerRegistry.RegisterSingleton<IDataStoreService, DataStoreService>();
+
+      // Views
       containerRegistry.RegisterForNavigation<NavigationPage>();
       containerRegistry.RegisterForNavigation<MainTabView, MainTabPageViewModel>();
       containerRegistry.RegisterForNavigation<ChartIntroView, ChartIntroViewModel>();
