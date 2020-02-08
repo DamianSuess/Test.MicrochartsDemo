@@ -6,27 +6,31 @@ using Prism.Ioc;
 
 namespace Test.MicrochartsDemo.Droid
 {
-    [Activity(Label = "Test.MicrochartsDemo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+  public class AndroidInitializer : IPlatformInitializer
+  {
+    public void RegisterTypes(IContainerRegistry containerRegistry)
     {
-        protected override void OnCreate(Bundle bundle)
-        {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
-
-            base.OnCreate(bundle);
-
-            global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App(new AndroidInitializer()));
-        }
+      // Register any platform specific implementations
     }
+  }
 
-    public class AndroidInitializer : IPlatformInitializer
+  [Activity(
+    Label = "Test Microcharts",
+    Icon = "@mipmap/ic_launcher",
+    Theme = "@style/MainTheme",
+    MainLauncher = true,
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+  public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+  {
+    protected override void OnCreate(Bundle bundle)
     {
-        public void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            // Register any platform specific implementations
-        }
+      TabLayoutResource = Resource.Layout.Tabbar;
+      ToolbarResource = Resource.Layout.Toolbar;
+
+      base.OnCreate(bundle);
+
+      global::Xamarin.Forms.Forms.Init(this, bundle);
+      LoadApplication(new App(new AndroidInitializer()));
     }
+  }
 }
-

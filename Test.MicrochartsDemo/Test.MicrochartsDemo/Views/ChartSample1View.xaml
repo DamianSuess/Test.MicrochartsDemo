@@ -2,7 +2,20 @@
 <ContentPage x:Class="Test.MicrochartsDemo.Views.ChartSample1View"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:charts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True">
-  <Label Text="Sample Two" />
+  <ContentPage.Content>
+    <ListView>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout>
+              <charts:ChartView Chart="{Binding ChartData}" />
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </ContentPage.Content>
 </ContentPage>

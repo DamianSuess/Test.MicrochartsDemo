@@ -6,11 +6,11 @@ namespace Test.MicrochartsDemo.Services
 {
   public class DataStoreService : IDataStoreService
   {
-    private static readonly SKColor AccentColor = SKColor.Parse("#2C5DF9");
-
-    private static readonly SKColor AccentDarkColor = SKColor.Parse("#484F64");
-
     private static readonly SKColor BlueColor = SKColor.Parse("#0099ff");
+
+    private static readonly SKColor BlueDarkColor = SKColor.Parse("#2C5DF9");
+
+    private static readonly SKColor GrayDarkColor = SKColor.Parse("#484F64");
 
     private static readonly SKColor GreenColor = SKColor.Parse("#26C3AC");
 

@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="Test.MicrochartsDemo.Views.ChartSample2View"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Test.MicrochartsDemo.Views.ChartSample2View">
-  
+             prism:ViewModelLocator.AutowireViewModel="True">
+  <StackLayout>
+    <Label Text="Coming Soon!" />
+    <Label Text="However, how this is NOT a navigation page. Just a regular 'Tab'" />
+  </StackLayout>
 </ContentPage>
