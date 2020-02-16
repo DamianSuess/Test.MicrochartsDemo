@@ -2,7 +2,7 @@
 This demonstrates a test app for the various Microcharts' charts in C# using Xamarin for mobile and desktop development.
 
 ## Microcharts Demo
-In this demo we're using [MoneyFox's Microcharts](https://github.com/MoneyFox/Microcharts) because their NuGet is a little more up-to-date with bugfixes (*Oct, 2019 vs Oct, 2017*).
+In this demo we're using [MoneyFox's Microcharts](https://github.com/MoneyFox/Microcharts) because their NuGet is a little more up-to-date with bugfixes (*Oct, 2019*) vs the main [Microcharts](https://github.com/dotnet-ad/Microcharts)'s last update of Feb, 2019.
 
 Many thanks goes out to the Microcharts team! We're checking out your repo and we're excited for what you're doing.
 
